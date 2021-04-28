@@ -41,20 +41,20 @@ class ResultFragment : Fragment() {
     fun setResult(option:Int){
         when(option){
             1->{
-             binding.tvMain.text="You are a QUITTER!"
-                binding.tvSub.text="You can let the person easily."
+             binding.tvmain.text="You are a QUITTER!"
+                binding.tvsub.text="You can let the person easily."
             }
-            1->{
-                binding.tvMain.text="You should focus on yourself"
-                binding.tvSub.text="You become readily clingy to your ex."
+            2->{
+                binding.tvmain.text="You should focus on yourself"
+                binding.tvsub.text="You become readily clingy to your ex."
             }
-            1->{
-                binding.tvMain.text="You should take it easy"
-                binding.tvSub.text="You can do crazy things no matter what it takes"
+            3->{
+                binding.tvmain.text="You should take it easy"
+                binding.tvsub.text="You can do crazy things no matter what it takes"
             }
-            1->{
-                binding.tvMain.text="You are pretty mature"
-                binding.tvSub.text="You can easily accept the break-up."
+            4->{
+                binding.tvmain.text="You are pretty mature"
+                binding.tvsub.text="You can easily accept the break-up."
             }
 
         }
