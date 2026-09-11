@@ -1,0 +1,30 @@
+/* src/components/Navbar.css */
+
+.nav-link {
+  position: relative; /* 밑줄의 위치 기준점이 됩니다. */
+  text-decoration: none; /* 기본 밑줄은 제거합니다. */
+  padding-bottom: 5px; /* 텍스트와 밑줄 사이의 간격을 만듭니다. */
+  transition: color 0.3s ease;
+}
+
+/* 링크 아래에 보이지 않는 밑줄을 미리 만들어 둡니다. */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* 처음에는 너비를 0으로 해서 보이지 않게 합니다. */
+  height: 3px; /* 밑줄의 두께를 조절합니다. */
+  background-color: #555; /* 밑줄의 색상을 지정합니다. */
+  transition: width 0.3s ease; /* 너비가 부드럽게 변하도록 애니메이션을 추가합니다. */
+}
+
+/* 링크에 마우스를 올렸을 때(hover) */
+.nav-link:hover::after {
+  width: 100%; /* 밑줄의 너비를 100%로 만들어서 보이게 합니다. */
+}
+
+/* (선택) 마우스를 올렸을 때 텍스트 색상도 살짝 변경 */
+.nav-link:hover {
+  color: #000;
+}
